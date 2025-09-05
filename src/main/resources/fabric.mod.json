@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "chatping",
+  "version": "${version}",
+  "name": "ChatPing",
+  "description": "",
+  "authors": [
+    "LendSpele"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chatping/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.lend.chatping.Chatping"
+    ]
+  },
+  "mixins": [
+    "chatping.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
