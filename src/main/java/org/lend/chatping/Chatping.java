@@ -45,6 +45,6 @@ public class Chatping implements ModInitializer {
                 )
         );
 
-        System.out.println("[ChatPing] Звук отправлен игроку " + player.getName().getString());
+        // System.out.println("[ChatPing] Звук отправлен игроку " + player.getName().getString());
     }
 }
