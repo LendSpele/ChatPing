@@ -12,8 +12,7 @@ public class Chatping implements ModInitializer {
     public void onInitialize() {
         ServerMessageEvents.CHAT_MESSAGE.register((message, sender, params) -> {
             String text = message.getContent().getString().toLowerCase();
-
-            MinecraftServer server = sender.getEntityWorld().getServer(); // ГАРАНТИРОВАНО есть!
+            MinecraftServer server = sender.getEntityWorld().getServer();
 
             if (text.contains("@everyone")) {
                 for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {

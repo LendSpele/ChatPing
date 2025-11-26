@@ -4,6 +4,7 @@
   "package": "org.lend.chatping.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "MessageCommandMixin"
   ],
   "client": [
   ],
